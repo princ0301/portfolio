@@ -1,101 +1,69 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
+import { FaGithub, FaEnvelope, FaPhone, FaLinkedin } from 'react-icons/fa'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl p-8 max-w-4xl w-full shadow-2xl">
+        <div className="flex flex-col md:flex-row items-center mb-8">
+          <div className="relative w-48 h-48 md:w-64 md:h-64 mb-4 md:mb-0 md:mr-8">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/img/img.jpg"
+              alt="Prince Kumar"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full border-4 border-white shadow-lg"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">Prince Kumar</h1>
+            <p className="text-xl md:text-2xl mb-4 text-purple-200">Computer Science Student | NLP Research Intern</p>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <a href="mailto:princeku07190@gmail.com" className="text-white hover:text-yellow-300 transition-colors duration-300">
+                <FaEnvelope size={28} />
+              </a>
+              <a href="tel:+916204313778" className="text-white hover:text-yellow-300 transition-colors duration-300">
+                <FaPhone size={28} />
+              </a>
+              <a href="https://github.com/princ0301" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors duration-300">
+                <FaGithub size={28} />
+              </a>
+              <a href="https://linkedin.com/in/prince-kumar-66ba45293" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-300 transition-colors duration-300">
+                <FaLinkedin size={28} />
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+        <div className="bg-white bg-opacity-20 rounded-2xl p-6 mb-8 shadow-lg">
+          <h2 className="text-2xl font-bold mb-4 text-white">About Me</h2>
+          <p className="text-lg text-purple-100">
+            I am a passionate and driven Computer Science student at Bhagwan Parshuram Institute of Technology (affiliated with GGSIPU), Delhi, India. My interests lie in artificial intelligence, machine learning, and natural language processing, where I enjoy exploring innovative solutions to complex challenges.
+          <br />
+            My academic journey has provided me with a solid foundation in programming, deep learning, and AI technologies. I am proficient in programming languages like Python and C++, and I have hands-on experience with frameworks and tools such as TensorFlow, PyTorch, and Flask.
+          <br />
+            I thrive on continuous learning and experimentation, keeping myself updated with the latest advancements in AI and technology. By combining creativity, analytical thinking, and a results-driven approach, I aim to contribute meaningfully to the tech community and advance in this ever-evolving field.
+          <br />
+            Outside of academics, I enjoy engaging with the tech community, exploring research trends, and honing my problem-solving skills to develop impactful and transformative solutions.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Link href="/experience" className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+            <h3 className="text-xl font-bold mb-2">Experience</h3>
+            <p>View my work history</p>
+          </Link>
+          <Link href="/skills" className="bg-green-600 hover:bg-green-700 text-white rounded-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+            <h3 className="text-xl font-bold mb-2">Skills</h3>
+            <p>Explore my technical skills</p>
+          </Link>
+          <Link href="/projects" className="bg-yellow-600 hover:bg-yellow-700 text-white rounded-xl p-6 text-center transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+            <h3 className="text-xl font-bold mb-2">Projects</h3>
+            <p>Check out my academic projects</p>
+          </Link>
+        </div>
+      </div>
+    </main>
+  )
 }
+
