@@ -19,7 +19,7 @@ const skillsData = {
     },
     {
       icon: "🗄️",
-      title: "Databases",
+      title: "Databases & Infrastructure",
       skills: ["SQL", "PostgreSQL", "MongoDB", "Docker", "Git/Github", "Linux"]
     }
   ],
