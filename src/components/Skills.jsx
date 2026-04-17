@@ -27,17 +27,21 @@ const skillsData = {
   certifications: [
     {
       name: "AI & Machine Learning Training",
-      issuer: "Samsung Innovation Campus (Ongoing)",
+      issuer: "Samsung Innovation Campus",
       // date: "2024",
       // credentialId: "ABC123XYZ",
       // link: "https://example.com/certificate"
     },
+    {
+      name: "Generative AI Certification",
+      issuer: "Udemy (Krish Naik)"
+    }
   ],
    
   achievements: [
     {
       title: "Problem Solving",
-      description: "LeetCode & GFG: 250+ problems solved across DSA topic",
+      description: "LeetCode & GFG: 300+ problems solved across DSA topic",
       links: [
         { name: "LeetCode", url: "https://leetcode.com/u/ctAh4XbWkU/" },
         { name: "GeeksforGeeks", url: "https://www.geeksforgeeks.org/profile/princek7fze" }

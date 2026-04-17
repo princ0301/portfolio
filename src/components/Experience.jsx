@@ -5,7 +5,7 @@ const experienceData = [
     id: 1,
     company: "IIT Delhi — MISN Lab",
     position: "NLP Research Intern",
-    duration: "Jun 2025 – Sep 2025",
+    duration: "Jan 2025 – Sep 2025",
     // location: "Remote",
     // type: "Full-time",
     description: "Contributed to speech-to-speech translation research for low-resource languages by fine-tuning transformer-based transformer models.",
